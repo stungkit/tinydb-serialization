@@ -48,6 +48,8 @@ Provided Serializers
 
 - ``tinydb_serialization.serializers.DateTimeSerializer``: serializes ``datetime`` objects
   as ISO 8601 formatted strings
+- ``tinydb_serialization.serializers.DateSerializer``: serializes ``date`` objects
+  as ISO 8601 formatted strings
 
 Creating Custom Serializers
 ---------------------------
@@ -72,6 +74,18 @@ by this package):
 
 Changelog
 *********
+
+**v2.2.0** (2024-10-05)
+-----------------------
+
+- Include the ``DateSerializer`` in this package (see `issue #16 <https://github.com/msiemens/tinydb-serialization/pull/16>`_)
+
+**v2.1.1** (2023-07-24)
+-----------------------
+
+- Fix VSCode Pylance type error (see `pull request #14 <https://github.com/msiemens/tinydb-serialization/pull/14>`_)
+- Add support for storages that encode as binary strings (see `pull request #17 <https://github.com/msiemens/tinydb-serialization/pull/17>`_)
+- Drop Python 3.7 support
 
 **v2.1.0** (2021-01-23)
 -----------------------
@@ -112,7 +126,7 @@ Changelog
 
 - Initial release on PyPI
 
-.. |Build Status| image:: https://img.shields.io/github/workflow/status/msiemens/tinydb-serialization/Python%20CI?style=flat-square
+.. |Build Status| image:: https://img.shields.io/github/actions/workflow/status/msiemens/tinydb-serialization/ci-workflow.yml?style=flat-square
    :target: https://github.com/msiemens/tinydb-serialization/actions?query=workflow%3A%22Python+CI%22
 .. |Coverage| image:: https://img.shields.io/coveralls/msiemens/tinydb-serialization.svg?style=flat-square
    :target: https://coveralls.io/r/msiemens/tinydb-serialization
